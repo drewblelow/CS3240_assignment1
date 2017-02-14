@@ -26,4 +26,65 @@ h1, h2, h3, h4, h5, h6, a, p{
     height: 100%;
     margin-left: 0px;
     margin-right: 0px;
+    text-align: center;
+}
+
+.generic_navbar_home_glyphicon{
+    visibility: hidden;
+    display: none;
+}
+
+.generic_navbar_home:hover .generic_navbar_home_glyphicon{
+    visibility: visible;
+    display: block;
+}
+
+.generic_navbar_home:hover .generic_navbar_home_text{
+    visibility: hidden;
+    display: none;
+}
+
+.generic_navbar_blog_glyphicon{
+    visibility: hidden;
+    display: none;
+}
+
+.generic_navbar_blog:hover .generic_navbar_blog_glyphicon{
+    visibility: visible;
+    display: block;
+}
+
+.generic_navbar_blog:hover .generic_navbar_blog_text{
+    visibility: hidden;
+    display: none;
+}
+
+.generic_navbar_gallery_glyphicon{
+    visibility: hidden;
+    display: none;
+}
+
+.generic_navbar_gallery:hover .generic_navbar_gallery_glyphicon{
+    visibility: visible;
+    display: block;
+}
+
+.generic_navbar_gallery:hover .generic_navbar_gallery_text{
+    visibility: hidden;
+    display: none;
+}
+
+.generic_navbar_about_glyphicon{
+    visibility: hidden;
+    display: none;
+}
+
+.generic_navbar_about:hover .generic_navbar_about_glyphicon{
+    visibility: visible;
+    display: block;
+}
+
+.generic_navbar_about:hover .generic_navbar_about_text{
+    visibility: hidden;
+    display: none;
 }
