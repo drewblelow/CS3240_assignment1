@@ -7,6 +7,14 @@ h1, h2, h3, h4, h5, h6, a, p{
     font-family:"Hattori Hanzo", Helvetica, sans-serif;
 }
 
+a:visited{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
 .navbar{
     padding-bottom: 0px;
 }
@@ -34,6 +42,10 @@ h1, h2, h3, h4, h5, h6, a, p{
     padding-left: 35px;
     padding-right: 25px;
     max-width: 125px;
+}
+
+.generic_navbar_home_glyphicon{
+    width: 125px;
 }
 
 .generic_navbar_home_glyphicon, .generic_navbar_blog_glyphicon, .generic_navbar_gallery_glyphicon, .generic_navbar_about_glyphicon{
