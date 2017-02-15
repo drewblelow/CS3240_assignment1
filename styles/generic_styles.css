@@ -7,27 +7,36 @@ h1, h2, h3, h4, h5, h6, a, p{
     font-family:"Hattori Hanzo", Helvetica, sans-serif;
 }
 
+.navbar{
+    padding-bottom: 0px;
+}
+
+.glyphicon{
+    color: #777777;
+}
+
 .generic_navbar_container{
     flex-direction: column;
     overflow: hidden;
     padding-left: 0px;
     padding-right: 0px;
     width: 100%;
-    height: 75px;
+    height: 80px;
     line-height: 75px;
     font-size: 2.5em;
-}
-
-.generic_navbar{
     background-color: #e2e2e2;
-    width: 100%;
-    height: 100%;
     margin-left: 0px;
     margin-right: 0px;
     text-align: center;
 }
 
-.generic_navbar_home_glyphicon{
+.generic_navbar_home{
+    padding-left: 25px;
+    padding-right: 25px;
+    max-width: 125px;
+}
+
+.generic_navbar_home_glyphicon, .generic_navbar_blog_glyphicon, .generic_navbar_gallery_glyphicon, .generic_navbar_about_glyphicon{
     visibility: hidden;
     display: none;
 }
@@ -42,9 +51,11 @@ h1, h2, h3, h4, h5, h6, a, p{
     display: none;
 }
 
-.generic_navbar_blog_glyphicon{
-    visibility: hidden;
-    display: none;
+.generic_navbar_blog, .generic_navbar_about, .generic_navbar_gallery{
+    float: right;
+    padding-left: 0px;
+    padding-right: 25px;
+    max-width: 125px;
 }
 
 .generic_navbar_blog:hover .generic_navbar_blog_glyphicon{
@@ -57,22 +68,12 @@ h1, h2, h3, h4, h5, h6, a, p{
     display: none;
 }
 
-.generic_navbar_gallery_glyphicon{
-    visibility: hidden;
-    display: none;
-}
-
 .generic_navbar_gallery:hover .generic_navbar_gallery_glyphicon{
     visibility: visible;
     display: block;
 }
 
 .generic_navbar_gallery:hover .generic_navbar_gallery_text{
-    visibility: hidden;
-    display: none;
-}
-
-.generic_navbar_about_glyphicon{
     visibility: hidden;
     display: none;
 }
@@ -96,8 +97,7 @@ h1, h2, h3, h4, h5, h6, a, p{
     color: #777777;
 }
 
-.test{
-    background-color: #000000;
-    height: 10px;
-    width: 10px;
+.generic_navbar_hamburger{
+    float: right;
+    padding-right: 25px;
 }
