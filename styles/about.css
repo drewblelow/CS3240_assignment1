@@ -1,0 +1,58 @@
+.jumbotron{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+.jumbotron-image{
+    width: 100%;
+}
+
+.jumbotron-overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #e2e2e2;
+}
+
+.text_body_container{
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
+
+.spacer_left, .spacer_right{
+    width: 15%;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.spacer_left{
+    float: left;
+}
+
+.about_text_body{
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: 0;
+    margin-right: 0;
+    overflow: hidden;
+    color: #555555;
+}
+
+.spacer_right{
+    float: right;
+}
+
+p{
+    font-size: 1.5em;
+}
