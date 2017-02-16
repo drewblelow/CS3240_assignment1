@@ -38,6 +38,7 @@ a:hover{
     padding-left: 0px;
     padding-right: 0px;
     width: 100%;
+    min-height: 80px;
     line-height: 75px;
     font-size: 2em;
     background-color: #e2e2e2;
