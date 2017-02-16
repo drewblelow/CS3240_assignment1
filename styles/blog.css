@@ -1,0 +1,55 @@
+.body_container{
+    display: inline-flex;
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 60px;
+}
+
+.spacer_left, .spacer_right{
+    width: 15%;
+    height: 100%;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.spacer_left{
+    float: left;
+}
+
+.spacer_right{
+    float: right;
+}
+
+.content_container{
+    display: flex;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: 0;
+    margin-right: 0;
+    overflow: hidden;
+    color: #555555;
+}
+
+h1{
+    font-weight: bold;
+}
+
+p{
+    font-size: 1.25em;
+}
+
+.spoofed_icon{
+    width: 200px;
+}
+
+.site_image{
+    max-width: 400px;
+}
+
+.post_container{
+    width: 70%;
+}
+
+.side_bar_container{
+    width: 30%;
+}

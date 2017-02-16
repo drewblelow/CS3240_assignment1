@@ -6,46 +6,84 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
         <link rel="stylesheet" href="..\styles\generic_styles.css">
-
+        <link rel="stylesheet" href="..\styles\blog.css">
     </head>
 
     <body>
+        <div class="row body-container">
+            <!-- nav -->
+            <div class="row">
+                <div class="container-fluid generic_navbar_container">
 
-        <!-- nav -->
-        <div class="container-fluid generic_navbar_container">
-            <div class="row generic_navbar">
-                <div class="col-lg-2 col-xl-2 col-md-3 col-sm-4 col-xs-4">
-                    <div class="generic_navbar_home generic_navbar_active_page">
+                    <div class="col-sm-2 generic_navbar_home">
                         <a href="..\docs\index.html" class="generic_navbar_home_text generic_navbar_links">Home</a>
-                        <a href="..\docs\index.html" class="generic_navbar_home_glyphicon generic_navbar_links"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a>
+                        <a href="..\docs\index.html" class="generic_navbar_home_glyphicon"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a>
                     </div>
-                </div>
-                <div class="col-lg-2 col-lg-offset-4 col-xl-2 col-xl-offset-4 hidden-lg-down">
-                    <div class="generic_navbar_blog">
-                        <a href="..\docs\blog.html" class="generic_navbar_blog_text generic_navbar_links">Blog</a>
-                        <a href="..\docs\blog.html" class="generic_navbar_blog_glyphicon generic_navbar_links"><span class="glyphicon glyphicon-file" aria-hidden="true"></span></a>
+
+                    <div class="col-sm-1 hidden-md hidden-lg hidden-xl generic_navbar_hamburger_container">
+                        <button class="generic_navbar_hamburger">
+                            <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+                        </button>
+                        <button class="generic_navbar_cross">
+                            <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                        </button>
+                        <div class="generic_navbar_menu">
+                            <ul style="list-style: none;">
+                                <li><a href="..\docs\blog.html" class="generic_navbar_links">Blog</a></li>
+                                <li><a href="..\docs\gallery.html" class="generic_navbar_links">Gallery</a></li>
+                                <li><a href="..\docs\about.html" class="generic_navbar_links">About</a></li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-2 col-xl-2 hidden-lg-down">
-                    <div class="generic_navbar_gallery">
+
+                    <div class="col-sm-2 hidden-xs hidden-sm generic_navbar_about">
+                        <a href="..\docs\about.html" class="generic_navbar_about_text generic_navbar_links">About</a>
+                        <a href="..\docs\about.html" class="generic_navbar_about_glyphicon"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a>
+                    </div>
+
+                    <div class="col-sm-2 hidden-xs hidden-sm generic_navbar_gallery">
                         <a href="..\docs\gallery.html" class="generic_navbar_gallery_text generic_navbar_links">Gallery</a>
                         <a href="..\docs\gallery.html" class="generic_navbar_gallery_glyphicon"><span class="glyphicon glyphicon-camera" aria-hidden="true"></span></a>
                     </div>
-                </div>
-                <div class="col-lg-2 col-xl-2 hidden-lg-down">
-                    <div class="generic_navbar_about">
-                        <a href="..\docs\about.html" class="generic_navbar_about_text generic_navbar_links">About</a>
-                        <a href="..\docs\about.html" class="generic_navbar_about_glyphicon generic_navbar_links"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a>
+
+                    <div class="col-sm-2 hidden-xs hidden-sm generic_navbar_blog">
+                        <a href="..\docs\blog.html" class="generic_navbar_blog_text generic_navbar_links generic_navbar_active_page">Blog</a>
+                        <a href="..\docs\blog.html" class="generic_navbar_blog_glyphicon"><span class="glyphicon glyphicon-file" aria-hidden="true"></span></a>
                     </div>
+
                 </div>
-
             </div>
+            <!-- nav -->
+            <!-- content -->
+            <div class="container-fluid">
+                <div class="row body_container">
+                    <div class="spacer_left hidden-xs hidden-sm"><p>&nbsp;</p></div>
+                    <div class="content_container">
+                        <span class="post_container">
+                            <div class="post">
+                                <img src="..\assets\image\NUSMaids logo.png" data-src="..\assets\image\NUSMaids logo.png" data-swap="..\assets\image\sunmaid.png" class="spoofed_image">
+                                <h1 class="post_header">NUSMaids</h1>
+                                <p class="post_body">NUSMaids started as a hackathon project, were we wanted create a service providing/fufilling web application. Our target user base was mainly NUS students, especially those residing on campus. We implemented basic features such as request posting, applying to provide services, as well as pricing and bargaining. Later on, the project idea was reused for a database application system. You can check it out over at <a href="http://nusmaids.tk">NUSMaids</a>.<br><br>A spoofed favicon was created for the project. Click on it to view the original.</p>
+                            </div>
+                            <div class="post">
+                                <img src="..\assets\image\Daikon_logo.png" data-src="..\assets\image\Daikon_logo.png" data-swap="..\assets\image\nikon.png" class="spoofed_image">
+                                <h1 class="post_header">Daikon</h1>
+                                <p class="post_body">The Daikon site was a spoof of a Nikon photo store. It was done as an assignment in the module CS3249, where we had to implement a responsive site for a store page. Unfortunately, since it was not hosted, I cannot provide a link. Click on the logo to view the original Nikon logo.<br><br>Feature below is a screenshot of the Daikon store site:</p>
+                                <img src="..\assets\image\daikon_site.png" class="site_image">
+                            </div>
+                        </span>
+                        <span class="side_bar_container">
+
+                        </span>
+                    </div>
+                    <div class="spacer_right hidden-xs hidden-sm"><p>&nbsp;</p></div>
+                </div>
+            </div>
+            <!-- content -->
         </div>
-        <!-- nav -->
-
-
-
     </body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="..\js\hamburger.js"></script>
+    <script src="..\js\blog_toggle.js"></script>
 </html>
