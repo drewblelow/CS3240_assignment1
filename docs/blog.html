@@ -36,9 +36,9 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-2 hidden-xs hidden-sm generic_navbar_about">
-                        <a href="..\docs\about.html" class="generic_navbar_about_text generic_navbar_links">About</a>
-                        <a href="..\docs\about.html" class="generic_navbar_about_glyphicon"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a>
+                    <div class="col-sm-2 hidden-xs hidden-sm generic_navbar_blog">
+                        <a href="..\docs\blog.html" class="generic_navbar_blog_text generic_navbar_links generic_navbar_active_page">Blog</a>
+                        <a href="..\docs\blog.html" class="generic_navbar_blog_glyphicon"><span class="glyphicon glyphicon-file" aria-hidden="true"></span></a>
                     </div>
 
                     <div class="col-sm-2 hidden-xs hidden-sm generic_navbar_gallery">
@@ -46,9 +46,9 @@
                         <a href="..\docs\gallery.html" class="generic_navbar_gallery_glyphicon"><span class="glyphicon glyphicon-camera" aria-hidden="true"></span></a>
                     </div>
 
-                    <div class="col-sm-2 hidden-xs hidden-sm generic_navbar_blog">
-                        <a href="..\docs\blog.html" class="generic_navbar_blog_text generic_navbar_links generic_navbar_active_page">Blog</a>
-                        <a href="..\docs\blog.html" class="generic_navbar_blog_glyphicon"><span class="glyphicon glyphicon-file" aria-hidden="true"></span></a>
+                    <div class="col-sm-2 hidden-xs hidden-sm generic_navbar_about">
+                        <a href="..\docs\about.html" class="generic_navbar_about_text generic_navbar_links">About</a>
+                        <a href="..\docs\about.html" class="generic_navbar_about_glyphicon"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a>
                     </div>
 
                 </div>
@@ -72,11 +72,48 @@
                                 <img src="..\assets\image\daikon_site.png" class="site_image">
                             </div>
                         </span>
-                        <span class="side_bar_container">
-
+                        <span class="side_bar_container hidden-sm hidden-xs">
+                            <div id="subscription_form">
+                                <h2>Subscibe!</h2>
+                                <form method="post" action="#">
+                                    <div>
+                                        <label>First Name:</label>
+                                        <input type="text" name="fname" id="fname" placeholder="Chris"/>
+                                    </div>
+                                    <div>
+                                        <label>Last Name: </label>
+                                        <input type="text" name="lname" id="lname" placeholder="Peacock"/>
+                                    </div>
+                                    <div>
+                                        <label>Email Address: </label>
+                                        <input type="text" name="ename" id="txtEmail" placeholder="example@domain.com"/>
+                                    </div>
+                                    <input type="submit" id="btnValidate" name="submit" Value="Submit" />
+                                </form>
+                            </div>
                         </span>
                     </div>
                     <div class="spacer_right hidden-xs hidden-sm"><p>&nbsp;</p></div>
+                </div>
+                <div class="hidden-md hidden-lg hidden-xl">
+                    <div id="subscription_form_small">
+                        <h2>Subscibe!</h2>
+                        <form method="post" action="#">
+                            <div>
+                                <label>First Name:</label>
+                                <input type="text" name="fname" id="fname_2" placeholder="Chris"/>
+                            </div>
+                            <div>
+                                <label>Last Name: </label>
+                                <input type="text" name="lname" id="lname_2" placeholder="Peacock"/>
+                            </div>
+                            <div>
+                                <label>Email Address: </label>
+                                <input type="text" name="ename" id="txtEmail_2" placeholder="example@domain.com"/>
+                            </div>
+                            <input type="submit" id="btnValidate_2" name="submit" Value="Submit" />
+                        </form>
+                    </div>
                 </div>
             </div>
             <!-- content -->
@@ -86,4 +123,5 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="..\js\hamburger.js"></script>
     <script src="..\js\blog_toggle.js"></script>
+    <script src="..\js\blog_subscribe.js"></script>
 </html>
