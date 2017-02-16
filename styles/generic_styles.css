@@ -33,7 +33,7 @@ a:hover{
 }
 
 .generic_navbar_container{
-    flex-direction: column;
+    display: flex;
     overflow: hidden;
     padding-left: 0px;
     padding-right: 0px;
@@ -45,12 +45,16 @@ a:hover{
     margin-left: 0px;
     margin-right: 0px;
     text-align: center;
+    white-space: nowrap;
 }
 
 .generic_navbar_home{
+    float: left;
+    text-align: left;
+    align-content: left;
     padding-left: 35px;
     padding-right: 25px;
-    max-width: 125px;
+    width: 90%;
 }
 
 .generic_navbar_home_glyphicon{
