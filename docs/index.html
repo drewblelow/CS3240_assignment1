@@ -20,11 +20,21 @@
                         <a href="..\docs\index.html" class="generic_navbar_home_glyphicon"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a>
                     </div>
 
-                    <!-- TODO -->
-                    <div class="col-sm-1 hidden-md hidden-lg hidden-xl generic_navbar_hamburger">
-                        <span class="glyphicon glyphicon-menu-hamburger dropdown-toggle" aria-hidden="true" data-toggle="dropdown"></span>
+                    <div class="col-sm-1 hidden-md hidden-lg hidden-xl generic_navbar_hamburger_container">
+                        <button class="generic_navbar_hamburger">
+                            <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+                        </button>
+                        <button class="generic_navbar_cross">
+                            <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                        </button>
+                        <div class="generic_navbar_menu">
+                            <ul style="list-style: none;">
+                                <li><a href="..\docs\blog.html" class="generic_navbar_links">Blog</a></li>
+                                <li><a href="..\docs\gallery.html" class="generic_navbar_links">Gallery</a></li>
+                                <li><a href="..\docs\about.html" class="generic_navbar_links">About</a></li>
+                            </ul>
+                        </div>
                     </div>
-                    <!-- TODO -->
 
                     <div class="col-sm-2 hidden-xs hidden-sm generic_navbar_about">
                         <a href="..\docs\about.html" class="generic_navbar_about_text generic_navbar_links">About</a>
@@ -32,13 +42,13 @@
                     </div>
 
                     <div class="col-sm-2 hidden-xs hidden-sm generic_navbar_gallery">
-                        <a href="" class="generic_navbar_gallery_text generic_navbar_links">Gallery</a>
-                        <a href="" class="generic_navbar_gallery_glyphicon"><span class="glyphicon glyphicon-camera" aria-hidden="true"></span></a>
+                        <a href="..\docs\gallery.html" class="generic_navbar_gallery_text generic_navbar_links">Gallery</a>
+                        <a href="..\docs\gallery.html" class="generic_navbar_gallery_glyphicon"><span class="glyphicon glyphicon-camera" aria-hidden="true"></span></a>
                     </div>
 
                     <div class="col-sm-2 hidden-xs hidden-sm generic_navbar_blog">
-                        <a href="" class="generic_navbar_blog_text generic_navbar_links">Blog</a>
-                        <a href="" class="generic_navbar_blog_glyphicon"><span class="glyphicon glyphicon-file" aria-hidden="true"></span></a>
+                        <a href="..\docs\blog.html" class="generic_navbar_blog_text generic_navbar_links">Blog</a>
+                        <a href="..\docs\blog.html" class="generic_navbar_blog_glyphicon"><span class="glyphicon glyphicon-file" aria-hidden="true"></span></a>
                     </div>
 
                 </div>
@@ -72,4 +82,5 @@
     </body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="..\js\hamburger.js"></script>
 </html>

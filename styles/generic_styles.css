@@ -38,7 +38,6 @@ a:hover{
     padding-left: 0px;
     padding-right: 0px;
     width: 100%;
-    height: 75px;
     line-height: 75px;
     font-size: 2em;
     background-color: #e2e2e2;
@@ -119,7 +118,20 @@ a:hover{
     color: #777777;
 }
 
-.generic_navbar_hamburger{
+.generic_navbar_hamburger_container{
     float: right;
     padding-right: 25px;
+}
+
+.generic_navbar_hamburger, .generic_navbar_cross {
+    background: none;
+    border: none;
+}
+
+.generic_navbar_hamburger:focus, .generic_navbar_cross:focus {
+    outline: 0;
+}
+
+.generic_navbar_menu {
+    float: right;
 }
