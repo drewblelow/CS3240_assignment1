@@ -1,6 +1,13 @@
+.carousel-inner{
+    height: 400px;
+}
+
+.carousel_image, .item{
+    height: 100%;
+}
+
 .gallery_container{
-    padding: 10%;
-    padding-top: 0;
+    padding: 5%;
     display: inline-flex;
     flex-wrap: wrap;
     align-items: center;
