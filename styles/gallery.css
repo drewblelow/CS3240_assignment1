@@ -1,29 +1,3 @@
-.jumbotron{
-    padding-top: 0px;
-    padding-bottom: 0px;
-    display: flex;
-    align-items: center;
-    position: relative;
-    width: 100%;
-}
-
-.jumbotron-image{
-    width: 100%;
-}
-
-.jumbotron-overlay{
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: #333333;
-}
-
 .gallery_container{
     padding: 10%;
     padding-top: 0;
